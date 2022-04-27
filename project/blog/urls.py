@@ -19,4 +19,6 @@ from . import views
 urlpatterns = [
     # The path() function is passed four arguments, two required: route and view, and two optional: kwargs, and name.
     path('', views.index, name="index"),
+    path('time', views.current_datetime, name="time"),
+    path('all', views.list_blog_posts, name="all_posts")    
 ]
